@@ -24,7 +24,7 @@ AMDI({ cmd: ["alive", "hi", "online"], desc: Lang.AliveDesc, type: "primary", re
     if (ALIVE_MSG.input === 'default' || ALIVE_MSG.input == undefined) {
         const buttons = [
             {type: "url", displayText: "💃🏻 Official Website", url: 'https://amdaniwasa.com/'},
-            {type: "url", displayText: "🎞️ AN Tech YouTube Channel", url: 'https://www.youtube.com/channel/UCZx8U1EU95-Wn9mH4dn15vQ'},
+            {type: "url", displayText: "🎞️ Omindu Bro YT Channel", url: 'https://www.youtube.com/channel/UCZx8U1EU95-Wn9mH4dn15vQ'},
             {type: "click", displayText: Lang.sysStats, buttonCMD: `${prefix}system`},
             {type: "click", displayText: Lang.vercheck, buttonCMD: `${prefix}qaversion`}
         ]
@@ -54,7 +54,7 @@ AMDI({ cmd: "system", desc: "Bot Status", cmdHideInMenu: true }, (async (amdiWA)
     var checkSTS = await sendText('_Checking status..._', {});
     var end = new Date().getTime();
     const usage = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
-    await reply('```⚕️Queen Amdi MD - Status⚕️```\n\n' + Lang.upTime + uptime + `\n` + Lang.ping + (end - start) +'\n'+ Lang.memUsage + usage, "💻");
+    await reply('```⚕️Queen Lora MD - Status⚕️```\n\n' + Lang.upTime + uptime + `\n` + Lang.ping + (end - start) +'\n'+ Lang.memUsage + usage, "💻");
     return await amdiWA.web.sendMessage(amdiWA.clientJID, { delete: checkSTS.key });
 }));
 
@@ -62,5 +62,5 @@ AMDI({ cmd: "system", desc: "Bot Status", cmdHideInMenu: true }, (async (amdiWA)
 AMDI({ cmd: ["qaversion", "version"], desc: "Version check", cmdHideInMenu: true }, (async (amdiWA) => {
     let { reply } = amdiWA.msgLayout;
     const version = Package.version
-    return await reply(`*🧬 Queen Amdi Version 🧬*\n\n` + '```Installed version``` : ' + version +'\n' + '\n```Official Site``` : https://amdaniwasa.com');
+    return await reply(`*🧬 Queen Lara Version 🧬*\n\n` + '```Installed version``` : ' + version +'\n' + '\n```Official Site``` : https://amdaniwasa.com');
 }));
