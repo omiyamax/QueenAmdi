@@ -15,7 +15,7 @@ const gplay = require('google-play-scraper');
 const yts = require( 'yt-search' )
 const Lang = Language.getString('search');
 
-const searchTITLE = '🔎 *Queen Amdi Search Engine*'
+const searchTITLE = '🔎 *Queen Lora Search Engine*'
 
 
 AMDI({ cmd: ["yt", "yts", "ytsearch"], desc: Lang.YTSDESC, type: "primary", react: "🔎" }, (async (amdiWA) => {
